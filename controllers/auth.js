@@ -56,7 +56,7 @@ const crearUsuario = async(req, res = response) => {
 const loginUsuario = async(req, res) => {
 
     const { email, password } = req.body
-    // console.log(email, password);
+    console.log(email, password);
 
     try {
         
