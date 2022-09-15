@@ -56,7 +56,7 @@ const crearUsuario = async(req, res = response) => {
 const loginUsuario = async(req, res) => {
 
     const { email, password } = req.body
-    console.log(email, password);
+    // console.log(email, password);
 
     try {
         
@@ -96,8 +96,7 @@ const loginUsuario = async(req, res) => {
         console.log(error);
         return res.status(500).json({
             ok: false,
-            msg: 'Por favor hable con el administrador',
-            error
+            msg: 'Por favor hable con el administrador'
         });
     }
 
